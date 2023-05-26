@@ -68,12 +68,12 @@ const throttled = (delay, fn) => {
 const movableElementsWrapper = document.querySelector(
   ".movable-elements-wrapper"
 );
-const sp = 0.35;
+const sp = 0.99;
 
 const items = gsap.utils.toArray(".movable").map(element => {
   return {
     element,
-    shiftValue: element.getAttribute("data-value") / 250,
+    shiftValue: element.getAttribute("data-value") / 60,
     xSet: gsap.quickSetter(element, "x", "px"),
     ySet: gsap.quickSetter(element, "y", "px"),
   }
@@ -87,38 +87,6 @@ const ms = {
 const mouseMoveHandler = (e) => {
   ms.x = e.x;
   ms.y = e.y;
-//   const movableElements = document.querySelectorAll(".movable");
-//   const boxes = [];
-
-//   movableElements.forEach((movableElement, i) => {
-//     const shiftValue = movableElement.getAttribute("data-value");
-//     const moveX = (e.clientX * shiftValue) / 250;
-//     const moveY = (e.clientY * shiftValue) / 250;
-
-//     const xSet = gsap.quickSetter(movableElement, "x", "px");
-//     const ySet = gsap.quickSetter(movableElement, "y", "px");
-
-//     boxes.push({
-//       moveX,
-//       moveY,
-//       xSet,
-//       ySet,
-//       movableElement
-//     });
-//   });
-
-//   gsap.ticker.add(() => {
-//     const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
-
-//     boxes[0].xSet(boxes[0].moveX * dt);
-//     boxes[0].ySet(boxes[0].moveY * dt);
-
-//     boxes[1].xSet(boxes[1].moveX * dt);
-//     boxes[1].ySet(boxes[1].moveY * dt);
-
-//     boxes[2].xSet(boxes[2].moveX * dt);
-//     boxes[2].ySet(boxes[2].moveY * dt);
-//   });
 };
 
 movableElementsWrapper.onmousemove = mouseMoveHandler;

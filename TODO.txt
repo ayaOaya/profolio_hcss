@@ -1,0 +1,5 @@
+design the output
+add pics instead of boxes
+add footer section
+add page transtion using barba.js
+
