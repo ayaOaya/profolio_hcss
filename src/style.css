@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+ }
   .wrap{
     background:var(--dark);
     font-family: 'Open Sans', sans-serif;
@@ -65,35 +65,50 @@
   position: absolute;
 
   &.one {
+    background-image: url("./public/imgs/MacBook\ Pro\ 16_\ -\ 9.png");
+    background-size: cover;
     background-color: yellow;
     top: 15%;
     left: 60%;
+    cursor: pointer;
   }
   
+  
   &.two {
+    background-image: url("./public/imgs/MacBook\ Pro\ 16_\ -\ 4.png");
+    background-size: cover;
     background-color: #e8dcc8;
     top: 0%;
     left: 10%;
+    cursor: pointer;
   }
   
   &.three {
+    background-image: url("./public/imgs/MacBook\ Pro\ 16_\ -\ 6.png");
+    background-size: cover;
     background-color: #5ace37;
     top: 35%;
     left: 10%;
   }
    &.foor {
+    background-image: url("./public/imgs/MacBook\ Pro\ 16_\ -\ 7.png");
+    background-size: cover;
     background-color: #545402;
     top: 55%;
     left: 60%;
   }
   
   &.five {
+    background-image: url("./public/imgs/MacBook\ Pro\ 16_\ -\ 5.png");
+    background-size: cover;
     background-color: #f0be62;
     top: 85%;
     left: 17%;
   }
   
   &.six {
+    background-image: url("./public/imgs/MacBook\ Pro\ 16_\ -\ 3.png");
+    background-size: cover;
     background-color: #9500ff;
     top: 110%;
     left: 50%;
