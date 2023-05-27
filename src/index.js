@@ -99,3 +99,15 @@ gsap.ticker.add(() => {
     item.ySet(item.shiftValue * ms.y * dt);
   });
 });
+
+/* contact */
+gsap.to(".contact-h2", {x:-1000, duration:3, delay:1.5 ,scrollTrigger: {
+  trigger: ".contact-h2",
+  scrub:true
+
+}})
+gsap.to(".about", {x:-1000, duration:3, delay:1.5 ,scrollTrigger: {
+  trigger: ".about",
+  scrub:true
+
+}})

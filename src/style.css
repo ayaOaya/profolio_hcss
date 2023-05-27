@@ -66,37 +66,55 @@
 
   &.one {
     background-color: yellow;
-    top: 5%;
-    left: 70%;
+    top: 15%;
+    left: 60%;
   }
   
   &.two {
     background-color: #e8dcc8;
     top: 0%;
-    left: 30%;
+    left: 10%;
   }
   
   &.three {
     background-color: #5ace37;
-    top: 25%;
-    left: 1%;
+    top: 35%;
+    left: 10%;
   }
    &.foor {
     background-color: #545402;
-    top: 40%;
+    top: 55%;
     left: 60%;
   }
   
   &.five {
     background-color: #f0be62;
-    top: 75%;
-    left: 10%;
+    top: 85%;
+    left: 17%;
   }
   
   &.six {
     background-color: #9500ff;
-    top: 80%;
-    left: 58%;
+    top: 110%;
+    left: 50%;
   }
 }
 
+.contact-h2 {
+  font-size: 9rem;
+  color: #3e3e3e51;
+  font-size: bold;
+  padding-left: 39rem;
+}
+
+.email {
+  position: absolute;
+  left: 40%;
+}
+.about {
+  font-size: 9rem;
+  color: #3e3e3e51;
+  font-size: bold;
+  padding-left: 39rem;
+  z-index: 0;
+}
